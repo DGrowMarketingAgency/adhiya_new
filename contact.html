@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- cdn -->
+    <!--  -->
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header-info">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="./imgs/Logo.png" alt="logo" /></a>
+        </div>
+        <div class="add-cont">
+          <a href="">
+            <i class="fa-solid fa-location-dot"></i>
+            184, MGY Babu St., Janaki Na Nagar, Alwartirunagar, Valasaravakkam,
+            Chennai - 600087
+          </a>
+          <div class="info-cont">
+            <a href="#"
+              ><i class="fa-solid fa-envelope"></i>infoadhiaclinic@gmail.com</a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-phone-volume"></i>+91 86 8000 1515</a
+            >
+          </div>
+        </div>
+        <div class="social">
+          <a href="#"
+            ><div class="insta"><i class="fa-brands fa-instagram"></i></div>
+            Instagram</a
+          >
+          <a href="#"
+            ><div class="whats"><i class="fa-brands fa-whatsapp"></i></div>
+            Whats App</a
+          >
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="menus">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li>
+              <div class="sub" onclick="openSubMenu()">Service</div>
+              <div class="sub-menu">
+                <a class="sub-list" href="./skin.html"> Skin Treatments</a>
+                <a class="sub-list" href="./hair-treatments.html"
+                  >Hair Regrowth Treatments</a
+                >
+                <a class="sub-list" href="./semi-permanent-makeup.html"
+                  >Semi-Permanent Makeup</a
+                >
+                <a class="sub-list" href="./dental-care.html">Dental Care </a>
+              </div>
+            </li>
+            <li><a href="./testimonial.html">Testimonial</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="hamburger" onclick="openMobileMenu()">☰</div>
+      </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+      <span class="close-btn" onclick="closeMobileMenu()">×</span>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <li class="mobile-dropdown">
+          <span onclick="toggleMobileDropdown()">Service ▾</span>
+          <div class="mobile-submenu" id="mobileSubmenu">
+            <a href="./skin.html">Skin Treatments</a>
+            <a href="./hair-treatments.html">Hair Regrowth Treatments</a>
+            <a href="./semi-permanent-makeup.html">Semi-Permanent Makeup</a>
+            <a href="./dental-care.html">Dental Care</a>
+          </div>
+        </li>
+        <li><a href="./testimonial.html">Testimonial</a></li>
+        <li><a href="./contact.html">Contact us</a></li>
+      </ul>
+    </div>
+    <!-- header -->
+    <div class="sub-hero-section">
+      <div class="container">
+        <h2>Contact Us</h2>
+      </div>
+    </div>
+    <div class="container">
+      <!-- SECTION 1 -->
+      <section class="con-section">
+        <div class="left">
+          <img
+            src="https://via.placeholder.com/500x500.png?text=Adhia+Clinic+Image"
+            alt="Clinic Image"
+          />
+        </div>
+        <div class="right">
+          <h1>Still Wondering Where to Start? We’re Here for That.</h1>
+          <p>Maybe your skin hasn’t been the same for years…</p>
+          <p>Maybe hair fall is hitting harder than you expected…</p>
+          <p>
+            Maybe you’ve been putting off a dental visit because of fear or
+            time…
+          </p>
+          <p>
+            Or maybe, you’re just tired of drawing on your brows every single
+            day.
+          </p>
+          <p>
+            We get it. These concerns aren’t small—they affect your confidence,
+            your comfort, and how you show up in the world. At Adhia Aesthetic
+            Clinic, we listen first, treat with care, and guide you without
+            pressure.
+          </p>
+          <p>
+            This is your safe space to ask questions, share concerns, and take
+            the first step—no judgment, just support.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 2 -->
+      <section class="con-section">
+        <!-- Left: Form -->
+        <div class="left">
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Right: Contact Info -->
+        <div class="right">
+          <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>
+              <i class="fas fa-envelope"></i> Email:
+              <a href="mailto:info@adhiaaesthetic.com"
+                >info@adhiaaesthetic.com</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-phone"></i> Phone:
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Address: 123 SkinCare
+              Street, Chennai, Tamil Nadu 600000
+            </p>
+
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- google map -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.166936331043!2d80.18106841065635!3d13.04060188722806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52672dd1338d27%3A0xe6ddec217e8429fb!2sAdhia%20Aesthetic%20Clinic%20%7C%20Skin%20%26%20Hair%20Cosmetic%20Clinic%20in%20Chennai%20%7C%20Dental%20clinic%20in%20Chennai!5e1!3m2!1sen!2sin!4v1752482376212!5m2!1sen!2sin"
+      width="100%"
+      height="400"
+      style="border: 0; margin: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <!-- google map -->
+    <!-- footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <img src="./imgs/Logo.png" alt="" class="footer-logo" />
+          <p>
+            184, MGY Babu St., Janaki Na Nagar, <br />
+            Alwartirunagar, Valasaravakkam, <br />
+            Chennai - 600087
+          </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Treatments</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="#"><i class="fas fa-phone"></i> +91 86 8000 1515</a>
+          <a href="#"
+            ><i class="fas fa-envelope"></i> infoadhiaclinic@gmail.com</a
+          >
+          <a href="#">
+            <i class="fas fa-clock"></i> 10AM - 1PM, 5PM - 9PM (Mon-Sat)<br />10AM
+            - 1PM (Sun)
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Adhia Aesthetic Clinic | Designed by
+          <a href="#">D-Grow Marketing Agency</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- js -->
+    <script src="./main.js"></script>
+    <!--  -->
+  </body>
+</html>

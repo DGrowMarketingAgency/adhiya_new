@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- cdn -->
+    <!--  -->
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header-info">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="./imgs/Logo.png" alt="logo" /></a>
+        </div>
+        <div class="add-cont">
+          <a href="">
+            <i class="fa-solid fa-location-dot"></i>
+            184, MGY Babu St., Janaki Na Nagar, Alwartirunagar, Valasaravakkam,
+            Chennai - 600087
+          </a>
+          <div class="info-cont">
+            <a href="#"
+              ><i class="fa-solid fa-envelope"></i>infoadhiaclinic@gmail.com</a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-phone-volume"></i>+91 86 8000 1515</a
+            >
+          </div>
+        </div>
+        <div class="social">
+          <a href="#"
+            ><div class="insta"><i class="fa-brands fa-instagram"></i></div>
+            Instagram</a
+          >
+          <a href="#"
+            ><div class="whats"><i class="fa-brands fa-whatsapp"></i></div>
+            Whats App</a
+          >
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="menus">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li>
+              <div class="sub" onclick="openSubMenu()">Service</div>
+              <div class="sub-menu">
+                <a class="sub-list" href="./skin.html"> Skin Treatments</a>
+                <a class="sub-list" href="./hair-treatments.html"
+                  >Hair Regrowth Treatments</a
+                >
+                <a class="sub-list" href="./semi-permanent-makeup.html"
+                  >Semi-Permanent Makeup</a
+                >
+                <a class="sub-list" href="./dental-care.html">Dental Care </a>
+              </div>
+            </li>
+            <li><a href="./testimonial.html">Testimonial</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="hamburger" onclick="openMobileMenu()">☰</div>
+      </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+      <span class="close-btn" onclick="closeMobileMenu()">×</span>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <li class="mobile-dropdown">
+          <span onclick="toggleMobileDropdown()">Service ▾</span>
+          <div class="mobile-submenu" id="mobileSubmenu">
+            <a href="./skin.html">Skin Treatments</a>
+            <a href="./hair-treatments.html">Hair Regrowth Treatments</a>
+            <a href="./semi-permanent-makeup.html">Semi-Permanent Makeup</a>
+            <a href="./dental-care.html">Dental Care</a>
+          </div>
+        </li>
+        <li><a href="./testimonial.html">Testimonial</a></li>
+        <li><a href="./contact.html">Contact us</a></li>
+      </ul>
+    </div>
+    <!-- header -->
+    <!-- hero -->
+    <div class="sub-hero-section">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>Where Beauty Meets Compassion, Where Science Meets Art</p>
+      </div>
+    </div>
+    <!-- hero -->
+    <!-- hero-section -->
+    <div class="section1">
+      <div class="container">
+        <div class="section-img">
+          <img src="./imgs/section-1img.png" alt="" />
+        </div>
+        <div class="section-text">
+          <h2 class="title">The Journey</h2>
+          <h2><span>That Started with a </span> Single Belief.</h2>
+          <ul>
+            <li>
+              <div>
+                <p>
+                  Six years ago, a simple yet powerful vision took shape in
+                  Chennai. We believed that true beauty isn't about perfection -
+                  it's about confidence. It's about looking in the mirror and
+                  loving what you see. It's about walking into a room and
+                  feeling like the best version of yourself.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <p>
+                  These moments don't happen by accident. They happen because we
+                  refuse to treat symptoms while ignoring the person behind
+                  them. Every client who walks through our doors isn't just
+                  seeking treatment - they're seeking a chance to fall in love
+                  with themselves again.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <p>
+                  Our clinic combines medical precision with something far more
+                  valuable: genuine care for your happiness. We don't just
+                  change appearances. We change lives.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#" class="btn"
+            >Discover the Adhia Approach
+            <div class="btn-icon">
+              <i class="fa-solid fa-arrow-right"></i></div
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- hero-section -->
+    <!-- Statistics -->
+    <div class="container">
+      <div class="statistics">
+        <div class="statistics-box">
+          <img src="./imgs/icon.png" alt="" />
+          <h3>5,000+</h3>
+          <p>Lives Transformed</p>
+        </div>
+        <div class="statistics-box">
+          <img src="./imgs/star-icon.png" alt="" />
+          <h3>5/5</h3>
+          <p>Average Client Satisfaction Rating</p>
+        </div>
+        <div class="statistics-box">
+          <img src="./imgs/ex-icon.png" alt="" />
+          <h3>10+</h3>
+          <p>Years of Combined Experience</p>
+        </div>
+        <div class="statistics-box">
+          <img src="./imgs/ad-icon.png" alt="" />
+          <h3>50+</h3>
+          <p>Advanced Treatment Options</p>
+        </div>
+        <div class="statistics-box">
+          <img src="./imgs/ret-icon.png" alt="" />
+          <h3>96%</h3>
+          <p>of Clients Return for Additional Treatments</p>
+        </div>
+        <div class="statistics-box">
+          <img src="./imgs/safe-icon.png" alt="" />
+          <h3>Zero</h3>
+          <p>Compromises on Safety Standards</p>
+        </div>
+      </div>
+      <p class="center-para">
+        <strong>
+          These aren't just numbers. They're proof that when you choose Adhia,
+          you're choosing a legacy of trust.</strong
+        >
+      </p>
+    </div>
+    <!-- Statistics -->
+    <div class="section1">
+      <div class="container">
+        <div class="section-text">
+          <h2 class="title">Where Every</h2>
+          <h2><span>Story Matters </span></h2>
+
+          <ul>
+            <li>
+              <div>
+                <p>
+                  Every client who walks through our doors has a unique story.
+                  Maybe it's the mother who wants to feel beautiful again after
+                  years of putting everyone else first. The professional who's
+                  ready to match their outer confidence with how capable they
+                  feel inside. Or the young adult taking their first step toward
+                  loving what they see in the mirror. We've been privileged to
+                  be part of thousands of these stories. Each consultation, each
+                  treatment, each follow-up is personal to us because we know
+                  it's deeply personal to you. Our team doesn't just see
+                  patients—we see people with hopes, dreams, and the courage to
+                  invest in themselves. That's why we combine cutting-edge
+                  techniques with the warmth and care you'd expect from family.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#" class="btn"
+            >Book Your Consultation
+
+            <div class="btn-icon">
+              <i class="fa-solid fa-arrow-right"></i></div
+          ></a>
+        </div>
+        <div class="section-img">
+          <img src="./imgs/section-1img.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="container">
+      <div class="abouttog-container">
+        <div class="abouttog-tabs">
+          <div class="abouttog-tab active" data-tab="mission">Our Mission</div>
+          <div class="abouttog-tab" data-tab="vision">Our Vision</div>
+          <div class="abouttog-tab" data-tab="values">Our Values</div>
+        </div>
+        <div class="abouttog-content" id="abouttogContent">
+          <h2>Our Mission</h2>
+          <p>
+            To provide safe, effective, and compassionate aesthetic treatments
+            that restore confidence and enhance natural beauty. We exist to help
+            every client discover their most beautiful self through personalized
+            care, advanced techniques, and unwavering support.
+          </p>
+        </div>
+      </div>
+      <a href="#" class="btn center-btn"
+        >Experience Our Values
+
+        <div class="btn-icon">
+          <i class="fa-solid fa-arrow-right"></i></div
+      ></a>
+    </div>
+    <!--  -->
+    <!--  -->
+    <div class="container">
+      <section class="facility-section">
+        <div class="facility-header">
+          <h2>Our Facility</h2>
+          <p>Where Comfort Meets Cutting-Edge Technology</p>
+        </div>
+        <div class="facility-timeline">
+          <div class="facility-line"></div>
+
+          <!-- 1 -->
+          <div class="facility-item">
+            <div class="facility-content">
+              <h3>Modern Treatment Rooms</h3>
+              <p>
+                Spacious, well-lit treatment areas equipped with the latest
+                medical-grade equipment. Each room is designed for privacy and
+                comfort, ensuring you feel relaxed throughout your treatment.
+              </p>
+            </div>
+            <div
+              class="facility-image"
+              style="
+                background-image: url('https://source.unsplash.com/600x400/?clinic,room');
+              "
+            ></div>
+            <div class="facility-marker"></div>
+          </div>
+
+          <!-- 2 -->
+          <div class="facility-item">
+            <div class="facility-content">
+              <h3>Advanced Technology</h3>
+              <p>
+                We invest in FDA-approved equipment and proven technologies to
+                ensure precise results, minimal discomfort, and faster recovery
+                times. Our commitment to innovation means you receive the most
+                effective treatments available.
+              </p>
+            </div>
+            <div
+              class="facility-image"
+              style="
+                background-image: url('https://source.unsplash.com/600x400/?technology,health');
+              "
+            ></div>
+            <div class="facility-marker"></div>
+          </div>
+
+          <!-- 3 -->
+          <div class="facility-item">
+            <div class="facility-content">
+              <h3>Sterile Environment</h3>
+              <p>
+                Hospital-grade sterilization protocols ensure your safety. Every
+                instrument is properly sterilized, every surface sanitized, and
+                every procedure performed under strict hygiene standards.
+              </p>
+            </div>
+            <div
+              class="facility-image"
+              style="
+                background-image: url('https://source.unsplash.com/600x400/?clean,hospital');
+              "
+            ></div>
+            <div class="facility-marker"></div>
+          </div>
+
+          <!-- 4 -->
+          <div class="facility-item">
+            <div class="facility-content">
+              <h3>Comfortable Waiting Areas</h3>
+              <p>
+                Relax in our welcoming reception area designed to ease any
+                pre-treatment anxiety. Complimentary refreshments and
+                comfortable seating make your visit as pleasant as possible.
+              </p>
+            </div>
+            <div
+              class="facility-image"
+              style="
+                background-image: url('https://source.unsplash.com/600x400/?lobby,interior');
+              "
+            ></div>
+            <div class="facility-marker"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--  -->
+    <!-- why  -->
+    <section class="why-choose-us">
+      <div class="section-title">
+        <h2 class="center-title">
+          OUR
+          <span>APPROACH </span>
+        </h2>
+        <p style="background-color: transparent">
+          Personalized Care, Proven Results
+        </p>
+        <div class="base-line">
+          <div class="ball ball1"></div>
+          <div class="ball ball2"></div>
+        </div>
+        <!-- <p class="center-para">
+          Excellence in Every Treatment, Care in Every Interaction
+        </p> -->
+      </div>
+      <div class="container">
+        <div class="choose-grid">
+          <div class="choose-box">
+            <h3>Comprehensive Consultation</h3>
+            <p>
+              Every journey begins with understanding your unique needs,
+              concerns, and goals. We take time to listen, analyze, and create a
+              treatment plan that's perfectly tailored to you.
+            </p>
+          </div>
+          <div class="choose-box">
+            <h3>Evidence-Based Treatments</h3>
+            <p>
+              We only offer treatments backed by scientific research and proven
+              results. Your safety and satisfaction depend on techniques that
+              work - that's what we provide.
+            </p>
+          </div>
+          <div class="choose-box">
+            <h3>Gradual Enhancement</h3>
+            <p>
+              Beautiful results don't happen overnight. We believe in gradual
+              enhancement that looks natural and ages gracefully. No dramatic
+              changes, just beautiful improvements.
+            </p>
+          </div>
+          <div class="choose-box">
+            <h3>Ongoing Support</h3>
+            <p>
+              Your relationship with us doesn't end when treatment does. We
+              provide comprehensive aftercare, regular follow-ups, and remain
+              available for any questions or concerns.
+            </p>
+          </div>
+          <div class="choose-box">
+            <h3>Honest Communication</h3>
+            <p>
+              We tell you exactly what to expect - timeline, results, potential
+              side effects, and costs. No surprises, no false promises, just
+              honest guidance you can trust.
+            </p>
+          </div>
+        </div>
+
+        <div class="cta-container">
+          <a href="#contact" class="cta-button"> Experience Our Approach</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- why  -->
+
+    <!-- review -->
+    <div class="section-title">
+      <h2 class="center-title">
+        In Their Own Words <span> Stories That Matter</span>
+      </h2>
+      <div class="base-line">
+        <div class="ball ball1"></div>
+        <div class="ball ball2"></div>
+      </div>
+    </div>
+    <div class="google-review-con">
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">K</div>
+          <div class="review-info">
+            <h4>Keerthi</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I have consulted Dr. Hindia for the Hydra Facial treatment, and I’m in
+          love with the results! My skin feels fresh, clean, and deeply
+          nourished. She made sure I was comfortable during the entire
+          procedure. Best facial experience I’ve had—my skin has never looked
+          better!
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">Y</div>
+          <div class="review-info">
+            <h4>Yazhini</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I was having severe hair fall for few months as I moved from my city
+          to Chennai… I visited Adhia clinic through Google. Doctor explained
+          everything about the reasons and treatment. I’ve completed 3 sessions
+          of hair GFC and can see a gradual reduction in hair fall.
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">L</div>
+          <div class="review-info">
+            <h4>Lucky</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I went for a facial at Adhia Aesthetic Clinic and also got a free
+          dental check-up, following which I took RCT and crown placement. I
+          completely trust the doctor for guiding me throughout. Thank you,
+          doctor!
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">P</div>
+          <div class="review-info">
+            <h4>Priya</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I took a consultation at Adhia Aesthetic Clinic for hair fall and
+          started PRP treatment. I see visible reduction in hair fall and was
+          also advised some hair supplements.
+        </p>
+      </div>
+    </div>
+
+    <!-- review -->
+    <!-- faq -->
+    <div class="container">
+      <section class="faq-section">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question">Will it really work for me?</button>
+          <div class="faq-answer">
+            <p>
+              We've treated thousands of people with your exact concerns. During
+              consultation, we'll show you before-and-after photos of clients
+              with similar issues and explain exactly what to expect. No false
+              hope, no unrealistic promises.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What if I'm not happy with the results?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Your satisfaction is our reputation. We track your progress
+              closely and adjust treatments as needed. If you're not thrilled
+              with results, we'll work with you until you are – or discuss
+              alternative solutions.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">How long before I see changes?</button>
+          <div class="faq-answer">
+            <p>
+              Some treatments show immediate improvement, others require
+              patience. We'll give you realistic timelines during consultation
+              and keep you informed throughout your journey. No surprises, no
+              disappointments.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I trust you with my face?</button>
+          <div class="faq-answer">
+            <p>
+              Your face is precious to us too. Every procedure is performed by
+              qualified professionals using proven techniques. We maintain the
+              highest safety standards because your wellbeing is our
+              responsibility.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What makes you different from other clinics?
+          </button>
+          <div class="faq-answer">
+            <p>
+              We measure success by your happiness, not our profit. We're still
+              here for you months after treatment ends. We listen to your
+              concerns, not just your symptoms. We treat you like family, not
+              just a client.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- faq -->
+    <!-- google map -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.166936331043!2d80.18106841065635!3d13.04060188722806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52672dd1338d27%3A0xe6ddec217e8429fb!2sAdhia%20Aesthetic%20Clinic%20%7C%20Skin%20%26%20Hair%20Cosmetic%20Clinic%20in%20Chennai%20%7C%20Dental%20clinic%20in%20Chennai!5e1!3m2!1sen!2sin!4v1752482376212!5m2!1sen!2sin"
+      width="100%"
+      height="400"
+      style="border: 0; margin: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <!-- google map -->
+    <!-- footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <img src="./imgs/Logo.png" alt="" class="footer-logo" />
+          <p>
+            184, MGY Babu St., Janaki Na Nagar, <br />
+            Alwartirunagar, Valasaravakkam, <br />
+            Chennai - 600087
+          </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Treatments</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="#"><i class="fas fa-phone"></i> +91 86 8000 1515</a>
+          <a href="#"
+            ><i class="fas fa-envelope"></i> infoadhiaclinic@gmail.com</a
+          >
+          <a href="#">
+            <i class="fas fa-clock"></i> 10AM - 1PM, 5PM - 9PM (Mon-Sat)<br />10AM
+            - 1PM (Sun)
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Adhia Aesthetic Clinic | Designed by
+          <a href="#">D-Grow Marketing Agency</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- js -->
+
+    <script src="./main.js"></script>
+    <script>
+      // const openSubMenu = () => {
+      //   const subMenu = document.querySelector(".sub-menu");
+      //   subMenu.classList.toggle("active");
+      // };
+    </script>
+    <!--  -->
+  </body>
+</html>

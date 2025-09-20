@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- cdn -->
+    <!--  -->
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header-info">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="./imgs/Logo.png" alt="logo" /></a>
+        </div>
+        <div class="add-cont">
+          <a href="">
+            <i class="fa-solid fa-location-dot"></i>
+            184, MGY Babu St., Janaki Na Nagar, Alwartirunagar, Valasaravakkam,
+            Chennai - 600087
+          </a>
+          <div class="info-cont">
+            <a href="#"
+              ><i class="fa-solid fa-envelope"></i>infoadhiaclinic@gmail.com</a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-phone-volume"></i>+91 86 8000 1515</a
+            >
+          </div>
+        </div>
+        <div class="social">
+          <a href="#"
+            ><div class="insta"><i class="fa-brands fa-instagram"></i></div>
+            Instagram</a
+          >
+          <a href="#"
+            ><div class="whats"><i class="fa-brands fa-whatsapp"></i></div>
+            Whats App</a
+          >
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="menus">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li>
+              <div class="sub" onclick="openSubMenu()">Service</div>
+              <div class="sub-menu">
+                <a class="sub-list" href="./skin.html"> Skin Treatments</a>
+                <a class="sub-list" href="./hair-treatments.html"
+                  >Hair Regrowth Treatments</a
+                >
+                <a class="sub-list" href="./semi-permanent-makeup.html"
+                  >Semi-Permanent Makeup</a
+                >
+                <a class="sub-list" href="./dental-care.html">Dental Care </a>
+              </div>
+            </li>
+            <li><a href="./testimonial.html">Testimonial</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="hamburger" onclick="openMobileMenu()">☰</div>
+      </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+      <span class="close-btn" onclick="closeMobileMenu()">×</span>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <li class="mobile-dropdown">
+          <span onclick="toggleMobileDropdown()">Service ▾</span>
+          <div class="mobile-submenu" id="mobileSubmenu">
+            <a href="./skin.html">Skin Treatments</a>
+            <a href="./hair-treatments.html">Hair Regrowth Treatments</a>
+            <a href="./semi-permanent-makeup.html">Semi-Permanent Makeup</a>
+            <a href="./dental-care.html">Dental Care</a>
+          </div>
+        </li>
+        <li><a href="./testimonial.html">Testimonial</a></li>
+        <li><a href="./contact.html">Contact us</a></li>
+      </ul>
+    </div>
+    <!-- header -->
+    <div class="sub-hero-section">
+      <div class="container">
+        <h2>Testimonials</h2>
+      </div>
+    </div>
+    <div class="container test-container">
+      <img src="./imgs/pngegg (3).png" alt="Google Logo" class="google-logo" />
+
+      <h2 style="text-align: center">
+        Real People. Real Confidence. Real Results.
+      </h2>
+      <p class="intro-text">
+        Discover what our clients have to say about their journeys—from skin
+        clarity and hair regrowth to dental care and natural enhancements. These
+        stories aren’t just reviews—they’re reflections of trust,
+        transformation, and renewed confidence.
+      </p>
+
+      <div class="reviews-container">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="avatar">K</div>
+            <div class="reviewer-info">
+              <div class="reviewer-name">Keerthi</div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">
+            I have consulted Dr. Hindia for the Hydra Facial treatment, and I’m
+            in love with the results! My skin feels fresh, clean, and deeply
+            nourished. Best facial experience I’ve had—my skin has never looked
+            better!
+          </p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="avatar">Y</div>
+            <div class="reviewer-info">
+              <div class="reviewer-name">Yazhini</div>
+              <div class="stars">★★★★☆</div>
+            </div>
+          </div>
+          <p class="review-text">
+            I had severe hair fall after moving to Chennai. The doctor explained
+            the causes and started me on GFC treatment. After 3 sessions, I see
+            a reduction. Great guidance and post-care too!
+          </p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="avatar">L</div>
+            <div class="reviewer-info">
+              <div class="reviewer-name">Lucky</div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="review-text">
+            I came for a facial and got a free dental check-up. Took RCT and
+            crown treatment later. I trust the doctor completely. Thank you!
+          </p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="avatar">P</div>
+            <div class="reviewer-info">
+              <div class="reviewer-name">Priya</div>
+              <div class="stars">★★★★☆</div>
+            </div>
+          </div>
+          <p class="review-text">
+            Started PRP for hairfall after a consultation. I can already see
+            visible reduction in hair fall. Also recommended supplements. Worth
+            it!
+          </p>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <a href="#book-now" class="cta-button"
+          >Your Turn Is Next—Book a Consultation</a
+        >
+      </div>
+    </div>
+    <div class="container">
+      <section class="why-choose-section">
+        <h2 class="section-title">Why Choose Us</h2>
+        <p class="section-description">
+          At Adhia Aesthetic Clinic, it’s not just about how you look—it’s about
+          how you feel. Our approach is grounded in medical science, aesthetic
+          balance, and compassion. From your first visit, we take the time to
+          understand not just your goals, but your story. We’ve created a space
+          where beauty meets trust, and every service—from skin and hair to
+          semi-permanent makeup and dental—is handled with personalized care and
+          ethical precision.
+        </p>
+        <div class="features">
+          <div class="feature">
+            <div class="feature-icon">🗣️</div>
+            <div class="feature-title">You’re Always Heard</div>
+            <p class="feature-text">
+              We start by listening to you. Your concerns guide our treatment
+              approach and solutions.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">🎯</div>
+            <div class="feature-title">Custom-Tailored Care</div>
+            <p class="feature-text">
+              No two clients are the same—our treatments are personalized for
+              your unique skin, hair, and smile.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">🩺</div>
+            <div class="feature-title">Doctors Who Care</div>
+            <p class="feature-text">
+              Our team combines clinical expertise with genuine empathy to
+              ensure you feel supported throughout.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">🧼</div>
+            <div class="feature-title">Safe & Calm Environment</div>
+            <p class="feature-text">
+              We prioritize hygiene and peace—every tool is sterilized, every
+              treatment space is relaxing.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">✨</div>
+            <div class="feature-title">Natural-Looking Results</div>
+            <p class="feature-text">
+              We don’t chase trends—we enhance your natural beauty for results
+              that feel like you.
+            </p>
+          </div>
+        </div>
+
+        <div class="bottom-text">
+          <p>
+            Beauty doesn’t come from changing who you are—it comes from caring
+            for who you are. At Adhia Aesthetic Clinic, we walk beside you on
+            your journey toward skin that glows, hair that thrives, a smile that
+            shines, and a confidence that feels real.
+          </p>
+          <p>
+            You don’t have to do it alone—and you don’t have to keep wondering.
+            Come in, let’s talk, and let’s take the first step together.
+          </p>
+          <a href="#book-now" class="cta-button">Book Your First Step</a>
+        </div>
+      </section>
+    </div>
+    <!-- google map -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.166936331043!2d80.18106841065635!3d13.04060188722806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52672dd1338d27%3A0xe6ddec217e8429fb!2sAdhia%20Aesthetic%20Clinic%20%7C%20Skin%20%26%20Hair%20Cosmetic%20Clinic%20in%20Chennai%20%7C%20Dental%20clinic%20in%20Chennai!5e1!3m2!1sen!2sin!4v1752482376212!5m2!1sen!2sin"
+      width="100%"
+      height="400"
+      style="border: 0; margin: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <!-- google map -->
+    <!-- footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <img src="./imgs/Logo.png" alt="" class="footer-logo" />
+          <p>
+            184, MGY Babu St., Janaki Na Nagar, <br />
+            Alwartirunagar, Valasaravakkam, <br />
+            Chennai - 600087
+          </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Treatments</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="#"><i class="fas fa-phone"></i> +91 86 8000 1515</a>
+          <a href="#"
+            ><i class="fas fa-envelope"></i> infoadhiaclinic@gmail.com</a
+          >
+          <a href="#">
+            <i class="fas fa-clock"></i> 10AM - 1PM, 5PM - 9PM (Mon-Sat)<br />10AM
+            - 1PM (Sun)
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Adhia Aesthetic Clinic | Designed by
+          <a href="#">D-Grow Marketing Agency</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- js -->
+    <script src="./main.js"></script>
+    <!--  -->
+  </body>
+</html>

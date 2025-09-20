@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dental Care | Adhia Aesthetic Clinic</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header-info">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="./imgs/Logo.png" alt="logo" /></a>
+        </div>
+        <div class="add-cont">
+          <a href="">
+            <i class="fa-solid fa-location-dot"></i>
+            184, MGY Babu St., Janaki Na Nagar, Alwartirunagar, Valasaravakkam,
+            Chennai - 600087
+          </a>
+          <div class="info-cont">
+            <a href="#"
+              ><i class="fa-solid fa-envelope"></i>infoadhiaclinic@gmail.com</a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-phone-volume"></i>+91 86 8000 1515</a
+            >
+          </div>
+        </div>
+        <div class="social">
+          <a href="#"
+            ><div class="insta"><i class="fa-brands fa-instagram"></i></div>
+            Instagram</a
+          >
+          <a href="#"
+            ><div class="whats"><i class="fa-brands fa-whatsapp"></i></div>
+            Whats App</a
+          >
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="menus">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li>
+              <div class="sub" onclick="openSubMenu()">Service</div>
+              <div class="sub-menu">
+                <a class="sub-list" href="./skin.html"> Skin Treatments</a>
+                <a class="sub-list" href="./hair-treatments.html"
+                  >Hair Regrowth Treatments</a
+                >
+                <a class="sub-list" href="./semi-permanent-makeup.html"
+                  >Semi-Permanent Makeup</a
+                >
+                <a class="sub-list" href="./dental-care.html">Dental Care </a>
+              </div>
+            </li>
+            <li><a href="./testimonial.html">Testimonial</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="hamburger" onclick="openMobileMenu()">☰</div>
+      </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+      <span class="close-btn" onclick="closeMobileMenu()">×</span>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <li class="mobile-dropdown">
+          <span onclick="toggleMobileDropdown()">Service ▾</span>
+          <div class="mobile-submenu" id="mobileSubmenu">
+            <a href="./skin.html">Skin Treatments</a>
+            <a href="./hair-treatments.html">Hair Regrowth Treatments</a>
+            <a href="./semi-permanent-makeup.html">Semi-Permanent Makeup</a>
+            <a href="./dental-care.html">Dental Care</a>
+          </div>
+        </li>
+        <li><a href="./testimonial.html">Testimonial</a></li>
+        <li><a href="./contact.html">Contact us</a></li>
+      </ul>
+    </div>
+    <!-- header (reuse your main header if needed) -->
+    <div class="sub-hero-section">
+      <div class="container">
+        <h2>SEMI-PERMANENT MAKEUP</h2>
+      </div>
+    </div>
+    <!-- hero-section -->
+    <div class="section1">
+      <div class="container">
+        <div class="section-img">
+          <img src="./imgs/section-1img.png" alt="" />
+        </div>
+        <div class="section-text">
+          <h2 class="title">Dental Care</h2>
+
+          <ul>
+            <li>
+              <div>
+                <p>
+                  A healthy smile speaks volumes. At Adhia Aesthetic Clinic, our
+                  comprehensive dental services are tailored to bring you the
+                  best in oral care, aesthetics, and comfort. Whether you're
+                  visiting us for a routine cleaning or a full-mouth
+                  restoration, our goal is to ensure your experience is gentle,
+                  informed, and results-driven.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#" class="btn"
+            >Discover the Adhia Approach
+            <div class="btn-icon">
+              <i class="fa-solid fa-arrow-right"></i></div
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- hero-section -->
+    <div class="container">
+      <section class="dentalser-section">
+        <h2 class="dentalser-title">Our Dental Treatments</h2>
+        <div class="dentalser-grid">
+          <div class="dentalser-card" data-target="fillings">
+            <h3>Fillings / Restorations</h3>
+            <p>
+              Restore decayed or fractured teeth with natural, tooth-colored
+              fillings.
+            </p>
+            <button class="dentalser-btn">Learn More</button>
+          </div>
+
+          <div class="dentalser-card" data-target="extraction">
+            <h3>Tooth Extraction</h3>
+            <p>
+              Gentle, expert removal of teeth when saving them isn’t possible.
+            </p>
+            <button class="dentalser-btn">Learn More</button>
+          </div>
+
+          <div class="dentalser-card" data-target="scaling">
+            <h3>Dental Scaling / Cleaning</h3>
+            <p>
+              Prevent gum disease and freshen your smile with regular cleanings.
+            </p>
+            <button class="dentalser-btn">Learn More</button>
+          </div>
+
+          <div class="dentalser-card" data-target="rct">
+            <h3>Root Canal Treatment (RCT)</h3>
+            <p>
+              Virtually painless procedure to eliminate infection and save
+              teeth.
+            </p>
+            <button class="dentalser-btn">Learn More</button>
+          </div>
+
+          <div class="dentalser-card" data-target="ortho">
+            <h3>Orthodontic Treatment</h3>
+            <p>
+              Straighten teeth and improve bite with braces or clear aligners.
+            </p>
+            <button class="dentalser-btn">Learn More</button>
+          </div>
+
+          <div class="dentalser-card" data-target="implants">
+            <h3>Dental Implants</h3>
+            <p>Permanent, natural-looking replacement for missing teeth.</p>
+            <button class="dentalser-btn">Learn More</button>
+          </div>
+
+          <div class="dentalser-card" data-target="bridges">
+            <h3>Dental Bridges & Crowns</h3>
+            <p>
+              Restore broken or missing teeth with durable ceramic or zirconia.
+            </p>
+            <button class="dentalser-btn">Learn More</button>
+          </div>
+
+          <div class="dentalser-card" data-target="periodontic">
+            <h3>Periodontic Treatment</h3>
+            <p>
+              Specialized care to prevent and treat gum disease effectively.
+            </p>
+            <button class="dentalser-btn">Learn More</button>
+          </div>
+
+          <div class="dentalser-card" data-target="pedodontic">
+            <h3>Pedodontic Treatment</h3>
+            <p>Gentle, child-friendly dental care from first tooth to teens.</p>
+            <button class="dentalser-btn">Learn More</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Modal -->
+    <div id="dentalser-modal" class="dentalser-modal">
+      <div class="dentalser-modal-content">
+        <span class="dentalser-close">&times;</span>
+        <div id="dentalser-modal-body"></div>
+      </div>
+    </div>
+
+    <!-- why  -->
+    <section class="why-choose-us">
+      <div class="section-title">
+        <h2 class="center-title">
+          Why Choose
+
+          <span>Us for Dental Care </span>
+        </h2>
+
+        <div class="base-line">
+          <div class="ball ball1"></div>
+          <div class="ball ball2"></div>
+        </div>
+        <!-- <p class="center-para">
+          Excellence in Every Treatment, Care in Every Interaction
+        </p> -->
+      </div>
+      <div class="container">
+        <div class="choose-grid">
+          <div class="choose-box">
+            <p>
+              One Clinic for All Ages: From your child’s first visit to adult
+              smile makeovers—we handle it all.
+            </p>
+          </div>
+          <div class="choose-box">
+            <p>
+              Gentle on Nerves, Tough on Cavities: Our pain-minimizing
+              techniques make every visit more comfortable.
+            </p>
+          </div>
+          <div class="choose-box">
+            <p>
+              Modern Tools, Traditional Values: We use updated equipment, but
+              our care is built on honesty and trust.
+            </p>
+          </div>
+          <div class="choose-box">
+            <p>
+              You’ll Always Be Heard: We explain procedures clearly—no rushed
+              decisions, no surprises.
+            </p>
+          </div>
+          <div class="choose-box">
+            <p>
+              Clean, Calm & Compassionate: From the waiting room to the dental
+              chair, everything is designed to ease your anxiety.
+            </p>
+          </div>
+        </div>
+
+        <div class="cta-container">
+          <a href="#contact" class="cta-button">
+            Let Your Smile Feel Safe Here</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- why  -->
+    <!-- review -->
+    <div class="section-title">
+      <h2 class="center-title">
+        In Their Own Words <span> Stories That Matter</span>
+      </h2>
+      <div class="base-line">
+        <div class="ball ball1"></div>
+        <div class="ball ball2"></div>
+      </div>
+    </div>
+    <div class="google-review-con">
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">K</div>
+          <div class="review-info">
+            <h4>Keerthi</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I have consulted Dr. Hindia for the Hydra Facial treatment, and I’m in
+          love with the results! My skin feels fresh, clean, and deeply
+          nourished. She made sure I was comfortable during the entire
+          procedure. Best facial experience I’ve had—my skin has never looked
+          better!
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">Y</div>
+          <div class="review-info">
+            <h4>Yazhini</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I was having severe hair fall for few months as I moved from my city
+          to Chennai… I visited Adhia clinic through Google. Doctor explained
+          everything about the reasons and treatment. I’ve completed 3 sessions
+          of hair GFC and can see a gradual reduction in hair fall.
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">L</div>
+          <div class="review-info">
+            <h4>Lucky</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I went for a facial at Adhia Aesthetic Clinic and also got a free
+          dental check-up, following which I took RCT and crown placement. I
+          completely trust the doctor for guiding me throughout. Thank you,
+          doctor!
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">P</div>
+          <div class="review-info">
+            <h4>Priya</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I took a consultation at Adhia Aesthetic Clinic for hair fall and
+          started PRP treatment. I see visible reduction in hair fall and was
+          also advised some hair supplements.
+        </p>
+      </div>
+    </div>
+
+    <!-- review -->
+    <!-- faq -->
+    <div class="container">
+      <section class="faq-section">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question">Will it really work for me?</button>
+          <div class="faq-answer">
+            <p>
+              We've treated thousands of people with your exact concerns. During
+              consultation, we'll show you before-and-after photos of clients
+              with similar issues and explain exactly what to expect. No false
+              hope, no unrealistic promises.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What if I'm not happy with the results?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Your satisfaction is our reputation. We track your progress
+              closely and adjust treatments as needed. If you're not thrilled
+              with results, we'll work with you until you are – or discuss
+              alternative solutions.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">How long before I see changes?</button>
+          <div class="faq-answer">
+            <p>
+              Some treatments show immediate improvement, others require
+              patience. We'll give you realistic timelines during consultation
+              and keep you informed throughout your journey. No surprises, no
+              disappointments.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I trust you with my face?</button>
+          <div class="faq-answer">
+            <p>
+              Your face is precious to us too. Every procedure is performed by
+              qualified professionals using proven techniques. We maintain the
+              highest safety standards because your wellbeing is our
+              responsibility.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What makes you different from other clinics?
+          </button>
+          <div class="faq-answer">
+            <p>
+              We measure success by your happiness, not our profit. We're still
+              here for you months after treatment ends. We listen to your
+              concerns, not just your symptoms. We treat you like family, not
+              just a client.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- faq -->
+    <!-- google map -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.166936331043!2d80.18106841065635!3d13.04060188722806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52672dd1338d27%3A0xe6ddec217e8429fb!2sAdhia%20Aesthetic%20Clinic%20%7C%20Skin%20%26%20Hair%20Cosmetic%20Clinic%20in%20Chennai%20%7C%20Dental%20clinic%20in%20Chennai!5e1!3m2!1sen!2sin!4v1752482376212!5m2!1sen!2sin"
+      width="100%"
+      height="400"
+      style="border: 0; margin: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <!-- google map -->
+    <!-- footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <img src="./imgs/Logo.png" alt="" class="footer-logo" />
+          <p>
+            184, MGY Babu St., Janaki Na Nagar, <br />
+            Alwartirunagar, Valasaravakkam, <br />
+            Chennai - 600087
+          </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Treatments</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="#"><i class="fas fa-phone"></i> +91 86 8000 1515</a>
+          <a href="#"
+            ><i class="fas fa-envelope"></i> infoadhiaclinic@gmail.com</a
+          >
+          <a href="#">
+            <i class="fas fa-clock"></i> 10AM - 1PM, 5PM - 9PM (Mon-Sat)<br />10AM
+            - 1PM (Sun)
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Adhia Aesthetic Clinic | Designed by
+          <a href="#">D-Grow Marketing Agency</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="./main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const modal = document.getElementById("dentalser-modal");
+        const modalBody = document.getElementById("dentalser-modal-body");
+        const closeBtn = document.querySelector(".dentalser-close");
+
+        const details = {
+          fillings: `
+      <h2>Fillings / Restorations</h2>
+      <p>Dental fillings are used to restore teeth damaged by decay or minor fractures. We use advanced, tooth-colored composite materials that blend seamlessly with your natural teeth, ensuring both function and aesthetics.</p>
+      <h4>When You May Need a Filling:</h4>
+      <ul>
+        <li>Visible cavities or tooth decay</li>
+        <li>Small chips or fractures</li>
+        <li>Sensitivity in a specific tooth</li>
+      </ul>
+      <h4>Benefits:</h4>
+      <ul>
+        <li>Natural-looking results</li>
+        <li>Strengthens weakened tooth structure</li>
+        <li>Quick, pain-free procedure</li>
+      </ul>
+      <h4>What to Expect:</h4>
+      <ul>
+        <li>Cleaning and preparing the tooth</li>
+        <li>Application of composite material</li>
+        <li>Immediate return to daily activities</li>
+      </ul>
+     
+      <button class="semimake-btn">Restore Strength and Confidence to Your Smile</button>
+    `,
+          extraction: `
+      <h2>Tooth Extraction</h2>
+      <p>Sometimes, saving a tooth isn’t possible—and that’s where gentle, expert extraction comes in. Whether it's a decayed tooth, impacted wisdom tooth, or preparation for braces, we ensure minimal discomfort with local anesthesia and proper aftercare.</p>
+      <h4>Common Reasons for Extraction:</h4>
+      <ul>
+        <li>Severe decay or infection</li>
+        <li>Overcrowding</li>
+        <li>Problematic wisdom teeth</li>
+      </ul>
+      <h4>Benefits:</h4>
+      <ul>
+        <li>Relieves pain and infection</li>
+        <li>Prevents spread to other teeth</li>
+        <li>Prepares mouth for restorative treatments</li>
+      </ul>
+      <h4>What to Expect:</h4>
+      <ul>
+        <li>Comfortable, anesthesia-assisted procedure</li>
+        <li>Mild swelling or soreness for 1–2 days</li>
+        <li>Guidance for post-extraction care</li>
+      </ul>
+     
+      <button class="semimake-btn">Safe, Comfortable Tooth Removal</button>
+    `,
+          scaling: `
+      <h2>Dental Scaling / Cleaning</h2>
+      <p>Scaling and polishing are essential for maintaining good oral hygiene. This preventive procedure removes plaque, tartar, and stains, helping to prevent gum disease and maintain a fresh, clean mouth.</p>
+      <h4>Why Regular Cleaning Matters:</h4>
+      <ul>
+        <li>Prevents gum disease and cavities</li>
+        <li>Reduces bad breath</li>
+        <li>Brightens your natural teeth</li>
+      </ul>
+      <h4>Benefits:</h4>
+      <ul>
+        <li>Fresher breath and cleaner mouth</li>
+        <li>Healthier gums and teeth</li>
+        <li>Simple, non-invasive procedure</li>
+      </ul>
+      <h4>What to Expect:</h4>
+      <ul>
+        <li>Ultrasonic cleaning and polishing</li>
+        <li>No anesthesia required</li>
+        <li>Can be done every 6 months</li>
+      </ul>
+    
+      <button class="semimake-btn">Keep Your Smile Clean and Healthy</button>
+    `,
+          rct: `
+      <h2>Root Canal Treatment (RCT)</h2>
+      <p>Root canal therapy is a tooth-saving procedure used to treat infection inside the tooth pulp. Contrary to popular belief, it’s virtually painless—and helps you preserve your natural tooth for years to come.</p>
+      <h4>Signs You Might Need RCT:</h4>
+      <ul>
+        <li>Severe toothache or sensitivity</li>
+        <li>Swelling or abscess near the tooth</li>
+        <li>Deep decay or trauma</li>
+      </ul>
+      <h4>Benefits:</h4>
+      <ul>
+        <li>Eliminates pain and infection</li>
+        <li>Retains your natural tooth</li>
+        <li>Long-term solution for tooth decay</li>
+      </ul>
+      <h4>What to Expect:</h4>
+      <ul>
+        <li>Multiple short visits, pain-managed</li>
+        <li>Temporary filling before final crown</li>
+        <li>Normal function restored quickly</li>
+      </ul>
+     
+      <button class="semimake-btn">Save Your Natural Tooth With Precision Care</button>
+    `,
+          ortho: `
+      <h2>Orthodontic Treatment</h2>
+      <p>Orthodontics isn’t just about straight teeth—it’s about better oral health and confidence. We offer traditional braces and clear aligner systems to correct crowding, bite issues, and jaw alignment.</p>
+      <h4>What We Treat:</h4>
+      <ul>
+        <li>Crooked, crowded, or gapped teeth</li>
+        <li>Overbite, underbite, and crossbite</li>
+        <li>Jaw misalignment</li>
+      </ul>
+      <h4>Benefits:</h4>
+      <ul>
+        <li>Boosts confidence and smile aesthetics</li>
+        <li>Improves bite and jaw function</li>
+        <li>Easier maintenance of oral hygiene</li>
+      </ul>
+      <h4>What to Expect:</h4>
+      <ul>
+        <li>Initial consultation and X-rays</li>
+        <li>Customized treatment plan</li>
+        <li>Brackets or aligners with regular follow-ups</li>
+      </ul>
+      
+      <button class="semimake-btn">Start Your Journey to a Perfectly Aligned Smile</button>
+    `,
+          implants: `
+      <h2>Dental Implants</h2>
+      <p>Dental implants are the most advanced and long-lasting solution for missing teeth. They replace both the root and crown, preserving bone structure and offering natural function and appearance.</p>
+      <h4>Why Choose Implants:</h4>
+      <ul>
+        <li>Permanent, stable, and durable</li>
+        <li>Looks and feels like your own tooth</li>
+        <li>Prevents jaw bone loss</li>
+      </ul>
+      <h4>Benefits:</h4>
+      <ul>
+        <li>Improved chewing and speaking</li>
+        <li>Bone preservation and facial structure support</li>
+        <li>No slipping or discomfort</li>
+      </ul>
+      <h4>What to Expect:</h4>
+      <ul>
+        <li>Minor surgery under local anesthesia</li>
+        <li>Healing time before crown placement</li>
+        <li>Lifelong results with proper care</li>
+      </ul>
+      
+      <button class="semimake-btn">Regain Function and Smile With Confidence</button>
+    `,
+          bridges: `
+      <h2>Dental Bridges & Crowns</h2>
+      <p>Crowns and bridges are restorative solutions that protect damaged teeth and fill gaps caused by missing ones. Made from high-quality materials like ceramic and zirconia, they restore chewing function and appearance.</p>
+      <h4>When Are They Needed:</h4>
+      <ul>
+        <li>To cover a broken or root canal-treated tooth</li>
+        <li>To replace one or more missing teeth</li>
+        <li>To improve bite and aesthetics</li>
+      </ul>
+      <h4>Benefits:</h4>
+      <ul>
+        <li>Strong, natural-looking restorations</li>
+        <li>Prevents teeth from shifting</li>
+        <li>Long-lasting and custom-designed</li>
+      </ul>
+      <h4>What to Expect:</h4>
+      <ul>
+        <li>Tooth preparation and impression</li>
+        <li>Temporary followed by permanent fitting</li>
+        <li>Minimal downtime, maximum comfort</li>
+      </ul>
+      
+      <button class="semimake-btn">Restore Your Smile Seamlessly</button>
+    `,
+          periodontic: `
+      <h2>Periodontic Treatment</h2>
+      <p>Gum health is the foundation of dental health. Periodontic care focuses on preventing, diagnosing, and treating gum disease—from gingivitis to advanced periodontitis.</p>
+      <h4>Signs of Gum Disease:</h4>
+      <ul>
+        <li>Bleeding gums when brushing</li>
+        <li>Persistent bad breath</li>
+        <li>Loose or shifting teeth</li>
+      </ul>
+      <h4>Benefits:</h4>
+      <ul>
+        <li>Prevents tooth loss</li>
+        <li>Restores gum health and reduces inflammation</li>
+        <li>Improves overall oral hygiene</li>
+      </ul>
+      <h4>What to Expect:</h4>
+      <ul>
+        <li>Deep cleaning (scaling and root planing)</li>
+        <li>Antibacterial rinses or laser treatment</li>
+        <li>Ongoing maintenance sessions</li>
+      </ul>
+      
+      <button class="semimake-btn">Protect Your Gums, Preserve Your Teeth</button>
+    `,
+          pedodontic: `
+      <h2>Pedodontic Treatment (Child Dental Care)</h2>
+      <p>We believe dental care should start early and be fear-free. Our pedodontic services are designed to provide gentle and effective care for children, from their first tooth to their teens.</p>
+      <h4>Services Include:</h4>
+      <ul>
+        <li>Routine checkups and cleanings</li>
+        <li>Fluoride treatments and sealants</li>
+        <li>Habit correction and space maintainers</li>
+      </ul>
+      <h4>Benefits:</h4>
+      <ul>
+        <li>Builds positive dental habits early</li>
+        <li>Prevents future dental issues</li>
+        <li>Safe, child-friendly environment</li>
+      </ul>
+      <h4>What to Expect:</h4>
+      <ul>
+        <li>Fun and educational visits</li>
+        <li>Customized care for each age group</li>
+        <li>Compassionate dentists who make kids feel safe</li>
+      </ul>
+     
+      <button class="semimake-btn">Keep Your Child’s Smile Bright From the Start</button>
+    `,
+        };
+
+        document.querySelectorAll(".dentalser-card").forEach((card) => {
+          const btn = card.querySelector(".dentalser-btn");
+          const target = card.getAttribute("data-target");
+
+          btn.addEventListener("click", () => {
+            modalBody.innerHTML =
+              details[target] || "<p>Details coming soon!</p>";
+            modal.style.display = "flex";
+          });
+        });
+
+        // Close modal
+        closeBtn.addEventListener(
+          "click",
+          () => (modal.style.display = "none")
+        );
+        window.addEventListener("click", (e) => {
+          if (e.target === modal) modal.style.display = "none";
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- cdn -->
+    <!--  -->
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header-info">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="./imgs/Logo.png" alt="logo" /></a>
+        </div>
+        <div class="add-cont">
+          <a href="">
+            <i class="fa-solid fa-location-dot"></i>
+            184, MGY Babu St., Janaki Na Nagar, Alwartirunagar, Valasaravakkam,
+            Chennai - 600087
+          </a>
+          <div class="info-cont">
+            <a href="#"
+              ><i class="fa-solid fa-envelope"></i>infoadhiaclinic@gmail.com</a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-phone-volume"></i>+91 86 8000 1515</a
+            >
+          </div>
+        </div>
+        <div class="social">
+          <a href="#"
+            ><div class="insta"><i class="fa-brands fa-instagram"></i></div>
+            Instagram</a
+          >
+          <a href="#"
+            ><div class="whats"><i class="fa-brands fa-whatsapp"></i></div>
+            Whats App</a
+          >
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="menus">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li>
+              <div class="sub" onclick="openSubMenu()">Service</div>
+              <div class="sub-menu">
+                <a class="sub-list" href="./skin.html"> Skin Treatments</a>
+                <a class="sub-list" href="./hair-treatments.html"
+                  >Hair Regrowth Treatments</a
+                >
+                <a class="sub-list" href="./semi-permanent-makeup.html"
+                  >Semi-Permanent Makeup</a
+                >
+                <a class="sub-list" href="./dental-care.html">Dental Care </a>
+              </div>
+            </li>
+            <li><a href="./testimonial.html">Testimonial</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="hamburger" onclick="openMobileMenu()">☰</div>
+      </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+      <span class="close-btn" onclick="closeMobileMenu()">×</span>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <li class="mobile-dropdown">
+          <span onclick="toggleMobileDropdown()">Service ▾</span>
+          <div class="mobile-submenu" id="mobileSubmenu">
+            <a href="./skin.html">Skin Treatments</a>
+            <a href="./hair-treatments.html">Hair Regrowth Treatments</a>
+            <a href="./semi-permanent-makeup.html">Semi-Permanent Makeup</a>
+            <a href="./dental-care.html">Dental Care</a>
+          </div>
+        </li>
+        <li><a href="./testimonial.html">Testimonial</a></li>
+        <li><a href="./contact.html">Contact us</a></li>
+      </ul>
+    </div>
+    <!-- header -->
+    <div class="sub-hero-section">
+      <div class="container">
+        <h2>Skin Treatments</h2>
+      </div>
+    </div>
+    <!-- section1 -->
+    <div class="section1">
+      <div class="container">
+        <div class="section-img">
+          <img src="./imgs/section-1img.png" alt="" />
+        </div>
+        <div class="section-text">
+          <h2 class="title" style="margin-bottom: 40px">Hydrafacial</h2>
+          <!-- <h2><span>Adhia Aesthetic Clinic</span> exists.</h2> -->
+          <ul>
+            <li>
+              <div>
+                <p>
+                  At Adhia Aesthetic Clinic, our Hydrafacial treatment offers
+                  more than just surface-level cleansing—it revitalizes your
+                  skin from deep within. This advanced, multi-step facial
+                  cleanses, exfoliates, extracts impurities, and infuses intense
+                  hydration using medical-grade serums. It's perfect for anyone
+                  looking to achieve instant radiance without any downtime.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <p>
+                  What makes Hydrafacial unique is its ability to deeply clean
+                  while nourishing the skin with antioxidants and peptides.
+                  Whether you're prepping for an event or managing dullness and
+                  dehydration, Hydrafacial is a safe, effective solution for all
+                  skin types—including sensitive skin.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#" class="btn"
+            >Discover the Adhia Approach
+            <div class="btn-icon">
+              <i class="fa-solid fa-arrow-right"></i></div
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- section1 -->
+    <!-- section2 -->
+    <div class="section ser-section">
+      <div class="container">
+        <div class="ser-grid">
+          <div class="ser-box">
+            <h3>What Hydrafacial Can Help With</h3>
+            <ul>
+              <li>Dull, tired-looking skin</li>
+              <li>Dehydration and dryness</li>
+              <li>Fine lines and early signs of aging</li>
+              <li>Oily and congested skin</li>
+              <li>Uneven tone and texture</li>
+            </ul>
+          </div>
+          <div class="ser-box">
+            <h3>What to Expect During the Session</h3>
+            <ul>
+              <li>Deep cleanse with gentle exfoliation</li>
+              <li>Painless vacuum extraction to unclog pores</li>
+              <li>Serum infusion with antioxidants and peptides</li>
+              <li>Post-treatment hydration and glow</li>
+            </ul>
+          </div>
+          <div class="ser-box">
+            <h3>Why Choose Hydrafacial?</h3>
+            <ul>
+              <li>Zero downtime, walk out glowing</li>
+              <li>Safe for all skin types and tones</li>
+              <li>Noticeable improvement in just one session</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn"> Book Your Hydrafacial Session Today</a>
+    </div>
+
+    <!-- section2 -->
+    <!-- section3 -->
+    <div class="section1">
+      <div class="container">
+        <div class="section-text">
+          <h2 class="title" style="margin-bottom: 40px">Medi facials</h2>
+          <!-- <h2><span>Adhia Aesthetic Clinic</span> exists.</h2> -->
+          <ul>
+            <li>
+              <div>
+                <p>
+                  Medifacials are where clinical science meets skin pampering.
+                  These treatments go beyond traditional salon facials by using
+                  active ingredients and advanced techniques that target
+                  specific skin concerns such as pigmentation, aging, acne, and
+                  dehydration. At Adhia Aesthetic Clinic, each medifacial is
+                  tailored based on your skin’s real-time needs.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <p>
+                  What sets medi facials apart is their customizable nature. We
+                  don’t believe in one-size-fits-all skincare. Whether your skin
+                  is stressed, tired, inflamed, or aging prematurely, we create
+                  a targeted facial protocol using medical-grade products and
+                  technologies.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#" class="btn"
+            >Discover the Adhia Approach
+            <div class="btn-icon">
+              <i class="fa-solid fa-arrow-right"></i></div
+          ></a>
+        </div>
+        <div class="section-img" style="padding-left: 30px">
+          <img src="./imgs/section-1img.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- section3 -->
+    <!-- section4 -->
+    <div class="section ser-section4">
+      <div class="container">
+        <div class="ser-4-img">
+          <img src="" alt="" />
+        </div>
+        <div class="ser-4-text">
+          <div class="ser-4-box">
+            <h4>Key Benefits of Medifacials:</h4>
+            <ul>
+              <li>
+                Targets and treats specific concerns like acne, dryness, and
+                pigmentation
+              </li>
+              <li>
+                Uses professional-grade ingredients not found in regular facials
+              </li>
+              <li>Gentle on sensitive skin but powerful in results</li>
+            </ul>
+          </div>
+          <div class="ser-4-box">
+            <h4>Key Benefits of Medifacials:</h4>
+            <ul>
+              <li>
+                Targets and treats specific concerns like acne, dryness, and
+                pigmentation
+              </li>
+              <li>
+                Uses professional-grade ingredients not found in regular facials
+              </li>
+              <li>Gentle on sensitive skin but powerful in results</li>
+            </ul>
+          </div>
+          <div class="ser-4-box">
+            <h4>Key Benefits of Medifacials:</h4>
+            <ul>
+              <li>
+                Targets and treats specific concerns like acne, dryness, and
+                pigmentation
+              </li>
+              <li>
+                Uses professional-grade ingredients not found in regular facials
+              </li>
+              <li>Gentle on sensitive skin but powerful in results</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="container">
+      <section class="skinser-services">
+        <h2 class="skinser-title">Our Skin & Aesthetic Services</h2>
+        <div class="skinser-grid">
+          <!-- Service Card Example -->
+          <div class="skinser-card" data-target="carbon-glow">
+            <h3>Carbon Glow Peel / Hollywood Facial</h3>
+            <p>
+              Instant glow with no downtime. Perfect for pre-events & oily skin.
+            </p>
+            <button class="skinser-btn">Book Appointment</button>
+          </div>
+
+          <div class="skinser-card" data-target="dermaplaning">
+            <h3>Dermaplaning Facial</h3>
+            <p>
+              Gentle exfoliation + peach fuzz removal for smooth, glowing skin.
+            </p>
+            <button class="skinser-btn">Book Appointment</button>
+          </div>
+
+          <div class="skinser-card" data-target="prp">
+            <h3>Face PRP (Vampire Facial)</h3>
+            <p>
+              Natural collagen boost using your own platelets for youthful skin.
+            </p>
+            <button class="skinser-btn">Book Appointment</button>
+          </div>
+
+          <div class="skinser-card" data-target="microneedling">
+            <h3>Microneedling</h3>
+            <p>
+              Stimulates collagen, reduces scars & fine lines with natural
+              healing.
+            </p>
+            <button class="skinser-btn">Book Appointment</button>
+          </div>
+
+          <div class="skinser-card" data-target="chemical-face">
+            <h3>Chemical Peels – Face</h3>
+            <p>
+              Target acne, pigmentation, dullness with customized medical peels.
+            </p>
+            <button class="skinser-btn">Book Appointment</button>
+          </div>
+
+          <div class="skinser-card" data-target="chemical-body">
+            <h3>Chemical Peels – Body</h3>
+            <p>
+              Improve texture, tone & pigmentation across back, arms, underarms.
+            </p>
+            <button class="skinser-btn">Book Appointment</button>
+          </div>
+
+          <div class="skinser-card" data-target="laser">
+            <h3>Laser Hair Reduction</h3>
+            <p>USFDA-approved safe technology for long-term smoothness.</p>
+            <button class="skinser-btn">Book Appointment</button>
+          </div>
+
+          <div class="skinser-card" data-target="tattoo">
+            <h3>Tattoo Removal</h3>
+            <p>Advanced Q-switched laser for safe, effective tattoo fading.</p>
+            <button class="skinser-btn">Book Appointment</button>
+          </div>
+
+          <div class="skinser-card" data-target="acne">
+            <h3>Acne & Acne Scar Treatment</h3>
+            <p>
+              Comprehensive solutions with peels, lasers, PRP & medications.
+            </p>
+            <button class="skinser-btn">Book Appointment</button>
+          </div>
+
+          <div class="skinser-card" data-target="botox">
+            <h3>Botox</h3>
+            <p>
+              Gold standard wrinkle reduction with safe & natural-looking
+              results.
+            </p>
+            <button class="skinser-btn">Book Appointment</button>
+          </div>
+
+          <div class="skinser-card" data-target="fillers">
+            <h3>Fillers</h3>
+            <p>Instantly restore volume & contour with FDA-approved fillers.</p>
+            <button class="skinser-btn">Book Appointment</button>
+          </div>
+
+          <div class="skinser-card" data-target="threads">
+            <h3>Threads (Thread Lift)</h3>
+            <p>Non-surgical lift to improve sagging & boost collagen.</p>
+            <button class="skinser-btn">Book Appointment</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== POPUPS FOR DETAILS ===== -->
+    <div class="skinser-modal" id="carbon-glow">
+      <div class="skinser-modal-content">
+        <span class="skinser-close">&times;</span>
+        <h2>Carbon Glow Peel / Hollywood Facial</h2>
+        <p>
+          The Carbon Glow Peel—often called the Hollywood Facial—is your go-to
+          for instant, event-ready skin...
+        </p>
+        <ul>
+          <li>No pain, peeling, or downtime</li>
+          <li>Instant clarity and glow</li>
+          <li>Perfect pre-event treatment</li>
+        </ul>
+        <button class="skinser-btn">Experience the Hollywood Glow</button>
+      </div>
+    </div>
+
+    <div class="skinser-modal" id="skinserModal">
+      <div class="skinser-modal-content">
+        <span class="skinser-close">&times;</span>
+        <div id="skinserModalBody"></div>
+      </div>
+    </div>
+    <!--  -->
+    <!-- why -->
+    <section class="why-choose-us">
+      <div class="section-title">
+        <h2 class="center-title">
+          Why Choose Us <span> for Skin Treatments </span>
+        </h2>
+        <div class="base-line">
+          <div class="ball ball1"></div>
+          <div class="ball ball2"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="choose-grid">
+          <div class="choose-box">
+            <h3>Customized for Indian Skin:</h3>
+            <p>
+              Every skin type is different. We tailor each treatment to your
+              skin’s tone, texture, and sensitivity.
+            </p>
+          </div>
+          <div class="choose-box">
+            <h3>Results That Feel Natural:</h3>
+            <p>
+              Whether it’s acne care or anti-ageing, our treatments restore—not
+              overdo.
+            </p>
+          </div>
+          <div class="choose-box">
+            <h3>Safe, Proven Techniques:</h3>
+            <p>
+              We don’t follow fads. We use science-backed solutions that deliver
+              results over time, safely.
+            </p>
+          </div>
+          <div class="choose-box">
+            <h3>Doctor-Led Care:</h3>
+            <p>
+              Your skin is in the hands of experienced aesthetic
+              professionals—not technicians.
+            </p>
+          </div>
+          <div class="choose-box">
+            <h3>A Comfort-First Experience:</h3>
+            <p>
+              From numbing to post-care, we prioritize your comfort throughout.
+            </p>
+          </div>
+        </div>
+
+        <div class="cta-container">
+          <a href="#contact" class="cta-button">Feel the Skin You Deserve</a>
+        </div>
+      </div>
+    </section>
+    <!-- why -->
+    <!-- section4 -->
+    <!-- review -->
+    <div class="section-title">
+      <h2 class="center-title">
+        In Their Own Words <span> Stories That Matter</span>
+      </h2>
+      <div class="base-line">
+        <div class="ball ball1"></div>
+        <div class="ball ball2"></div>
+      </div>
+    </div>
+    <div class="google-review-con">
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">K</div>
+          <div class="review-info">
+            <h4>Keerthi</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I have consulted Dr. Hindia for the Hydra Facial treatment, and I’m in
+          love with the results! My skin feels fresh, clean, and deeply
+          nourished. She made sure I was comfortable during the entire
+          procedure. Best facial experience I’ve had—my skin has never looked
+          better!
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">Y</div>
+          <div class="review-info">
+            <h4>Yazhini</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I was having severe hair fall for few months as I moved from my city
+          to Chennai… I visited Adhia clinic through Google. Doctor explained
+          everything about the reasons and treatment. I’ve completed 3 sessions
+          of hair GFC and can see a gradual reduction in hair fall.
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">L</div>
+          <div class="review-info">
+            <h4>Lucky</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I went for a facial at Adhia Aesthetic Clinic and also got a free
+          dental check-up, following which I took RCT and crown placement. I
+          completely trust the doctor for guiding me throughout. Thank you,
+          doctor!
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">P</div>
+          <div class="review-info">
+            <h4>Priya</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I took a consultation at Adhia Aesthetic Clinic for hair fall and
+          started PRP treatment. I see visible reduction in hair fall and was
+          also advised some hair supplements.
+        </p>
+      </div>
+    </div>
+
+    <!-- review -->
+    <section class="skin-cta-section">
+      <div class="skin-cta-content">
+        <h2>Your skin carries your story</h2>
+        <p>
+          Your stress, your joy, your journey. At Adhia Aesthetic Clinic, we
+          don’t treat just the surface. We understand the hesitation, the
+          frustration, the wish to feel better in your skin. Whether it’s acne
+          that never left or the glow you miss, we’re here to help you get back
+          to feeling like yourself again—confident, refreshed, radiant.
+        </p>
+        <a href="#contact" class="skin-cta-btn"
+          >✨ You Deserve to Glow—We’ll Help.</a
+        >
+      </div>
+    </section>
+    <!-- faq -->
+    <div class="container">
+      <section class="faq-section">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question">Will it really work for me?</button>
+          <div class="faq-answer">
+            <p>
+              We've treated thousands of people with your exact concerns. During
+              consultation, we'll show you before-and-after photos of clients
+              with similar issues and explain exactly what to expect. No false
+              hope, no unrealistic promises.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What if I'm not happy with the results?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Your satisfaction is our reputation. We track your progress
+              closely and adjust treatments as needed. If you're not thrilled
+              with results, we'll work with you until you are – or discuss
+              alternative solutions.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">How long before I see changes?</button>
+          <div class="faq-answer">
+            <p>
+              Some treatments show immediate improvement, others require
+              patience. We'll give you realistic timelines during consultation
+              and keep you informed throughout your journey. No surprises, no
+              disappointments.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I trust you with my face?</button>
+          <div class="faq-answer">
+            <p>
+              Your face is precious to us too. Every procedure is performed by
+              qualified professionals using proven techniques. We maintain the
+              highest safety standards because your wellbeing is our
+              responsibility.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What makes you different from other clinics?
+          </button>
+          <div class="faq-answer">
+            <p>
+              We measure success by your happiness, not our profit. We're still
+              here for you months after treatment ends. We listen to your
+              concerns, not just your symptoms. We treat you like family, not
+              just a client.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- faq -->
+    <!-- google map -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.166936331043!2d80.18106841065635!3d13.04060188722806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52672dd1338d27%3A0xe6ddec217e8429fb!2sAdhia%20Aesthetic%20Clinic%20%7C%20Skin%20%26%20Hair%20Cosmetic%20Clinic%20in%20Chennai%20%7C%20Dental%20clinic%20in%20Chennai!5e1!3m2!1sen!2sin!4v1752482376212!5m2!1sen!2sin"
+      width="100%"
+      height="400"
+      style="border: 0; margin: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <!-- google map -->
+    <!-- footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <img src="./imgs/Logo.png" alt="" class="footer-logo" />
+          <p>
+            184, MGY Babu St., Janaki Na Nagar, <br />
+            Alwartirunagar, Valasaravakkam, <br />
+            Chennai - 600087
+          </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Treatments</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="#"><i class="fas fa-phone"></i> +91 86 8000 1515</a>
+          <a href="#"
+            ><i class="fas fa-envelope"></i> infoadhiaclinic@gmail.com</a
+          >
+          <a href="#">
+            <i class="fas fa-clock"></i> 10AM - 1PM, 5PM - 9PM (Mon-Sat)<br />10AM
+            - 1PM (Sun)
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Adhia Aesthetic Clinic | Designed by
+          <a href="#">D-Grow Marketing Agency</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="./main.js"></script>
+  </body>
+</html>

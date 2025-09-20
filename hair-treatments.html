@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hair Regrowth Treatments | Adhia Aesthetic Clinic</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header-info">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="./imgs/Logo.png" alt="logo" /></a>
+        </div>
+        <div class="add-cont">
+          <a href="">
+            <i class="fa-solid fa-location-dot"></i>
+            184, MGY Babu St., Janaki Na Nagar, Alwartirunagar, Valasaravakkam,
+            Chennai - 600087
+          </a>
+          <div class="info-cont">
+            <a href="#"
+              ><i class="fa-solid fa-envelope"></i>infoadhiaclinic@gmail.com</a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-phone-volume"></i>+91 86 8000 1515</a
+            >
+          </div>
+        </div>
+        <div class="social">
+          <a href="#"
+            ><div class="insta"><i class="fa-brands fa-instagram"></i></div>
+            Instagram</a
+          >
+          <a href="#"
+            ><div class="whats"><i class="fa-brands fa-whatsapp"></i></div>
+            Whats App</a
+          >
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="menus">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li>
+              <div class="sub" onclick="openSubMenu()">Service</div>
+              <div class="sub-menu">
+                <a class="sub-list" href="./skin.html"> Skin Treatments</a>
+                <a class="sub-list" href="./hair-treatments.html"
+                  >Hair Regrowth Treatments</a
+                >
+                <a class="sub-list" href="./semi-permanent-makeup.html"
+                  >Semi-Permanent Makeup</a
+                >
+                <a class="sub-list" href="./dental-care.html">Dental Care </a>
+              </div>
+            </li>
+            <li><a href="./testimonial.html">Testimonial</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="hamburger" onclick="openMobileMenu()">☰</div>
+      </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+      <span class="close-btn" onclick="closeMobileMenu()">×</span>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <li class="mobile-dropdown">
+          <span onclick="toggleMobileDropdown()">Service ▾</span>
+          <div class="mobile-submenu" id="mobileSubmenu">
+            <a href="./skin.html">Skin Treatments</a>
+            <a href="./hair-treatments.html">Hair Regrowth Treatments</a>
+            <a href="./semi-permanent-makeup.html">Semi-Permanent Makeup</a>
+            <a href="./dental-care.html">Dental Care</a>
+          </div>
+        </li>
+        <li><a href="./testimonial.html">Testimonial</a></li>
+        <li><a href="./contact.html">Contact us</a></li>
+      </ul>
+    </div>
+    <!-- hero-section -->
+    <div class="section1">
+      <div class="container">
+        <div class="section-img">
+          <img src="./imgs/section-1img.png" alt="" />
+        </div>
+        <div class="section-text">
+          <h2 class="title">Hair Regrowth</h2>
+          <h2><span>Treatments </span></h2>
+          <ul>
+            <li>
+              <div>
+                <p>
+                  Hair loss can feel overwhelming—but it doesn’t have to be
+                  permanent. At Adhia Aesthetic Clinic, our Hair Regrowth
+                  Treatments combine medical science and holistic care to help
+                  you restore fuller, healthier hair. We understand that every
+                  scalp is different, so each treatment plan is customized to
+                  the root cause of your hair concern.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#" class="btn"
+            >Discover the Adhia Approach
+            <div class="btn-icon">
+              <i class="fa-solid fa-arrow-right"></i></div
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- hero-section -->
+    <div class="container">
+      <section class="hairser-section">
+        <div class="hairser-container">
+          <h2 class="hairser-title">Our Hair Treatments</h2>
+          <div class="hairser-grid">
+            <!-- Hair PRP -->
+            <div class="hairser-card" data-target="prp">
+              <h3>Hair PRP (Platelet-Rich Plasma)</h3>
+              <p>
+                Stimulate hair follicles & strengthen existing hair using
+                natural growth factors.
+              </p>
+              <button class="hairser-btn">Learn More</button>
+            </div>
+
+            <!-- Hair GFC -->
+            <div class="hairser-card" data-target="gfc">
+              <h3>Hair GFC (Growth Factor Concentrate)</h3>
+              <p>
+                Advanced therapy with higher concentration of growth factors for
+                faster regrowth.
+              </p>
+              <button class="hairser-btn">Learn More</button>
+            </div>
+
+            <!-- Oxygen Laser Therapy -->
+            <div class="hairser-card" data-target="laser">
+              <h3>Oxygen Laser Therapy</h3>
+              <p>
+                Non-invasive dual-action therapy to revitalize scalp health and
+                improve hair density.
+              </p>
+              <button class="hairser-btn">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div class="hairser-modal" id="hairserModal">
+        <div class="hairser-modal-content">
+          <span class="hairser-close">&times;</span>
+          <div id="hairserModalBody"></div>
+        </div>
+      </div>
+    </div>
+    <!-- why  -->
+    <section class="why-choose-us">
+      <div class="section-title">
+        <h2 class="center-title">
+          Why Choose Us
+
+          <span>for Hair Regrowth </span>
+        </h2>
+
+        <div class="base-line">
+          <div class="ball ball1"></div>
+          <div class="ball ball2"></div>
+        </div>
+        <!-- <p class="center-para">
+          Excellence in Every Treatment, Care in Every Interaction
+        </p> -->
+      </div>
+      <div class="container">
+        <div class="choose-grid">
+          <div class="choose-box">
+            <p>
+              Not Just Hair, But Hope: We understand hair loss is emotional—we
+              treat both scalp and confidence.
+            </p>
+          </div>
+          <div class="choose-box">
+            <p>
+              Advanced Therapies: PRP, GFC, Oxygen Laser—all backed by research
+              and handled by experts.
+            </p>
+          </div>
+          <div class="choose-box">
+            <p>
+              Root-Cause Approach: We don’t guess. We diagnose the issue before
+              planning your treatment.
+            </p>
+          </div>
+          <div class="choose-box">
+            <p>
+              Visible Improvement, Session by Session: Our clients see results,
+              not just promises.
+            </p>
+          </div>
+          <div class="choose-box">
+            <p>
+              Private & Respectful: Your concerns are handled discreetly with
+              the empathy they deserve.
+            </p>
+          </div>
+        </div>
+
+        <div class="cta-container">
+          <a href="#contact" class="cta-button"> Regrow Hair. Regain You.</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- why  -->
+    <!-- review -->
+    <div class="section-title">
+      <h2 class="center-title">
+        In Their Own Words <span> Stories That Matter</span>
+      </h2>
+      <div class="base-line">
+        <div class="ball ball1"></div>
+        <div class="ball ball2"></div>
+      </div>
+    </div>
+    <div class="google-review-con">
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">K</div>
+          <div class="review-info">
+            <h4>Keerthi</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I have consulted Dr. Hindia for the Hydra Facial treatment, and I’m in
+          love with the results! My skin feels fresh, clean, and deeply
+          nourished. She made sure I was comfortable during the entire
+          procedure. Best facial experience I’ve had—my skin has never looked
+          better!
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">Y</div>
+          <div class="review-info">
+            <h4>Yazhini</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I was having severe hair fall for few months as I moved from my city
+          to Chennai… I visited Adhia clinic through Google. Doctor explained
+          everything about the reasons and treatment. I’ve completed 3 sessions
+          of hair GFC and can see a gradual reduction in hair fall.
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">L</div>
+          <div class="review-info">
+            <h4>Lucky</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I went for a facial at Adhia Aesthetic Clinic and also got a free
+          dental check-up, following which I took RCT and crown placement. I
+          completely trust the doctor for guiding me throughout. Thank you,
+          doctor!
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">P</div>
+          <div class="review-info">
+            <h4>Priya</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I took a consultation at Adhia Aesthetic Clinic for hair fall and
+          started PRP treatment. I see visible reduction in hair fall and was
+          also advised some hair supplements.
+        </p>
+      </div>
+    </div>
+
+    <!-- review -->
+    <!-- faq -->
+    <div class="container">
+      <section class="faq-section">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question">Will it really work for me?</button>
+          <div class="faq-answer">
+            <p>
+              We've treated thousands of people with your exact concerns. During
+              consultation, we'll show you before-and-after photos of clients
+              with similar issues and explain exactly what to expect. No false
+              hope, no unrealistic promises.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What if I'm not happy with the results?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Your satisfaction is our reputation. We track your progress
+              closely and adjust treatments as needed. If you're not thrilled
+              with results, we'll work with you until you are – or discuss
+              alternative solutions.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">How long before I see changes?</button>
+          <div class="faq-answer">
+            <p>
+              Some treatments show immediate improvement, others require
+              patience. We'll give you realistic timelines during consultation
+              and keep you informed throughout your journey. No surprises, no
+              disappointments.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I trust you with my face?</button>
+          <div class="faq-answer">
+            <p>
+              Your face is precious to us too. Every procedure is performed by
+              qualified professionals using proven techniques. We maintain the
+              highest safety standards because your wellbeing is our
+              responsibility.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What makes you different from other clinics?
+          </button>
+          <div class="faq-answer">
+            <p>
+              We measure success by your happiness, not our profit. We're still
+              here for you months after treatment ends. We listen to your
+              concerns, not just your symptoms. We treat you like family, not
+              just a client.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- faq -->
+    <!-- google map -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.166936331043!2d80.18106841065635!3d13.04060188722806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52672dd1338d27%3A0xe6ddec217e8429fb!2sAdhia%20Aesthetic%20Clinic%20%7C%20Skin%20%26%20Hair%20Cosmetic%20Clinic%20in%20Chennai%20%7C%20Dental%20clinic%20in%20Chennai!5e1!3m2!1sen!2sin!4v1752482376212!5m2!1sen!2sin"
+      width="100%"
+      height="400"
+      style="border: 0; margin: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <!-- google map -->
+    <!-- footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <img src="./imgs/Logo.png" alt="" class="footer-logo" />
+          <p>
+            184, MGY Babu St., Janaki Na Nagar, <br />
+            Alwartirunagar, Valasaravakkam, <br />
+            Chennai - 600087
+          </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Treatments</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="#"><i class="fas fa-phone"></i> +91 86 8000 1515</a>
+          <a href="#"
+            ><i class="fas fa-envelope"></i> infoadhiaclinic@gmail.com</a
+          >
+          <a href="#">
+            <i class="fas fa-clock"></i> 10AM - 1PM, 5PM - 9PM (Mon-Sat)<br />10AM
+            - 1PM (Sun)
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Adhia Aesthetic Clinic | Designed by
+          <a href="#">D-Grow Marketing Agency</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer -->
+    <script src="./main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hairserDetails = {
+          prp: `
+        <h2>Hair PRP (Platelet-Rich Plasma)</h2>
+        <p>Hair PRP is one of the most effective natural treatments for hair thinning and early hair loss. It involves using your own blood, extracting the platelets rich in growth factors, and injecting them directly into your scalp. These growth factors stimulate hair follicles, encouraging new growth and strengthening existing hair.</p>
+        <p>This treatment is particularly effective in cases of androgenic alopecia (pattern baldness) and post-partum hair fall.</p>
+        <h4>What It Helps With:</h4>
+        <ul>
+          <li>Thinning hair and hair fall</li>
+          <li>Weak or dormant hair follicles</li>
+          <li>Receding hairline or patchy scalp</li>
+        </ul>
+        <h4>Treatment Highlights:</h4>
+        <ul>
+          <li>Completely natural and safe</li>
+          <li>No allergic reactions since your own blood is used</li>
+          <li>Visible improvement after 3–4 sessions</li>
+        </ul>
+        <h4>What to Expect:</h4>
+        <ul>
+          <li>Mild redness or sensitivity post-treatment</li>
+          <li>Gradual thickening and new growth in 4–6 weeks</li>
+          <li>Monthly sessions recommended for optimal results</li>
+        </ul>
+        <button class="hairser-btn">Regrow Your Hair Naturally with PRP</button>
+      `,
+          gfc: `
+        <h2>Hair GFC (Growth Factor Concentrate)</h2>
+        <p>Hair GFC is an advanced version of PRP that delivers a higher concentration of growth factors for faster and more targeted hair regrowth. The platelets are processed in a special way to extract only the most potent components, leading to better cell repair and follicle activation.</p>
+        <p>It’s especially effective for men and women experiencing early to moderate stages of hair loss.</p>
+        <h4>Why It Works:</h4>
+        <ul>
+          <li>More concentrated than traditional PRP</li>
+          <li>Encourages stronger, faster hair regrowth</li>
+          <li>Minimal discomfort, with no downtime</li>
+        </ul>
+        <h4>Ideal For:</h4>
+        <ul>
+          <li>Individuals with hereditary or hormonal hair loss</li>
+          <li>Those not responding to basic treatments</li>
+          <li>Anyone looking for a boost to thinning hair</li>
+        </ul>
+        <button class="hairser-btn">Ask Us About Our Advanced GFC Therapy</button>
+      `,
+          laser: `
+        <h2>Oxygen Laser Therapy</h2>
+        <p>Oxygen Laser Therapy is a non-invasive treatment that uses low-level laser energy combined with oxygen infusion to revitalize scalp health. The laser light increases blood flow to the scalp, while oxygen enhances nutrient absorption and detoxification of the hair follicles.</p>
+        <p>This dual-action treatment not only improves hair density but also strengthens the quality and shine of existing hair.</p>
+        <h4>Benefits:</h4>
+        <ul>
+          <li>Improves scalp circulation</li>
+          <li>Detoxifies and oxygenates follicles</li>
+          <li>Reduces inflammation and promotes stronger hair</li>
+        </ul>
+        <h4>What to Expect:</h4>
+        <ul>
+          <li>Completely painless and soothing experience</li>
+          <li>No needles, no downtime</li>
+          <li>Best results seen with 8–10 sessions</li>
+        </ul>
+        <button class="hairser-btn">Strengthen Your Roots with Oxygen Laser Therapy</button>
+      `,
+        };
+
+        const modal = document.getElementById("hairserModal");
+        const modalBody = document.getElementById("hairserModalBody");
+        const closeBtn = modal.querySelector(".hairser-close");
+
+        // Open modal on Learn More button click
+        document
+          .querySelectorAll(".hairser-card .hairser-btn")
+          .forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+              e.stopPropagation();
+              const targetId = btn
+                .closest(".hairser-card")
+                .getAttribute("data-target");
+              modalBody.innerHTML =
+                hairserDetails[targetId] || "<p>Content not found</p>";
+              modal.style.display = "flex";
+            });
+          });
+
+        // Close modal on X
+        closeBtn.addEventListener("click", () => {
+          modal.style.display = "none";
+        });
+
+        // Close modal on outside click
+        window.addEventListener("click", (e) => {
+          if (e.target === modal) modal.style.display = "none";
+        });
+
+        // ---------- FAQ Accordion ----------
+        document.querySelectorAll(".faq-question").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            btn.classList.toggle("active");
+            const answer = btn.nextElementSibling;
+            if (answer.style.maxHeight) {
+              answer.style.maxHeight = null;
+            } else {
+              answer.style.maxHeight = answer.scrollHeight + "px";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

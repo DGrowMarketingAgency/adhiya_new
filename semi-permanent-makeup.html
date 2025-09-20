@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semi-Permanent Makeup | Adhia Aesthetic Clinic</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header-info">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="./imgs/Logo.png" alt="logo" /></a>
+        </div>
+        <div class="add-cont">
+          <a href="">
+            <i class="fa-solid fa-location-dot"></i>
+            184, MGY Babu St., Janaki Na Nagar, Alwartirunagar, Valasaravakkam,
+            Chennai - 600087
+          </a>
+          <div class="info-cont">
+            <a href="#"
+              ><i class="fa-solid fa-envelope"></i>infoadhiaclinic@gmail.com</a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-phone-volume"></i>+91 86 8000 1515</a
+            >
+          </div>
+        </div>
+        <div class="social">
+          <a href="#"
+            ><div class="insta"><i class="fa-brands fa-instagram"></i></div>
+            Instagram</a
+          >
+          <a href="#"
+            ><div class="whats"><i class="fa-brands fa-whatsapp"></i></div>
+            Whats App</a
+          >
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="menus">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li>
+              <div class="sub" onclick="openSubMenu()">Service</div>
+              <div class="sub-menu">
+                <a class="sub-list" href="./skin.html"> Skin Treatments</a>
+                <a class="sub-list" href="./hair-treatments.html"
+                  >Hair Regrowth Treatments</a
+                >
+                <a class="sub-list" href="./semi-permanent-makeup.html"
+                  >Semi-Permanent Makeup</a
+                >
+                <a class="sub-list" href="./dental-care.html">Dental Care </a>
+              </div>
+            </li>
+            <li><a href="./testimonial.html">Testimonial</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="hamburger" onclick="openMobileMenu()">☰</div>
+      </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+      <span class="close-btn" onclick="closeMobileMenu()">×</span>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <li class="mobile-dropdown">
+          <span onclick="toggleMobileDropdown()">Service ▾</span>
+          <div class="mobile-submenu" id="mobileSubmenu">
+            <a href="./skin.html">Skin Treatments</a>
+            <a href="./hair-treatments.html">Hair Regrowth Treatments</a>
+            <a href="./semi-permanent-makeup.html">Semi-Permanent Makeup</a>
+            <a href="./dental-care.html">Dental Care</a>
+          </div>
+        </li>
+        <li><a href="./testimonial.html">Testimonial</a></li>
+        <li><a href="./contact.html">Contact us</a></li>
+      </ul>
+    </div>
+    <!-- header (reuse your main header if needed) -->
+    <div class="sub-hero-section">
+      <div class="container">
+        <h2>SEMI-PERMANENT MAKEUP</h2>
+      </div>
+    </div>
+    <div class="container">
+      <section class="semimake-section">
+        <div class="semimake-container">
+          <h2 class="semimake-title">Our Semi-Permanent Makeup</h2>
+          <div class="semimake-grid">
+            <!-- Eyebrows -->
+            <div class="semimake-card" data-target="eyebrows">
+              <h3>Eyebrows – Combination & Ombre Brows</h3>
+              <p>
+                Perfectly sculpted brows with a natural or makeup-ready look.
+              </p>
+              <button class="semimake-btn">Learn More</button>
+            </div>
+
+            <!-- Lips -->
+            <div class="semimake-card" data-target="lips">
+              <h3>Lips – Lip Tinting / Blushing</h3>
+              <p>
+                Enhance lip color, definition & symmetry with a natural flush.
+              </p>
+              <button class="semimake-btn">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Modal -->
+    <div class="semimake-modal" id="semimakeModal">
+      <div class="semimake-modal-content">
+        <span class="semimake-close">&times;</span>
+        <div id="semimakeModalBody"></div>
+      </div>
+    </div>
+    <!-- why  -->
+    <section class="why-choose-us">
+      <div class="section-title">
+        <h2 class="center-title">
+          Why Choose Us
+
+          <span>for Semi-Permanent Makeup </span>
+        </h2>
+
+        <div class="base-line">
+          <div class="ball ball1"></div>
+          <div class="ball ball2"></div>
+        </div>
+        <!-- <p class="center-para">
+          Excellence in Every Treatment, Care in Every Interaction
+        </p> -->
+      </div>
+      <div class="container">
+        <div class="choose-grid">
+          <div class="choose-box">
+            <p>
+              Face-First Design: We map each brow and lip design to suit your
+              natural face structure.
+            </p>
+          </div>
+          <div class="choose-box">
+            <p>
+              Natural Shades Only: We never overdo it—just soft, subtle tones
+              that blend beautifully.
+            </p>
+          </div>
+          <div class="choose-box">
+            <p>
+              Hygiene is Sacred: Every procedure is done with sterilized tools
+              and the highest hygiene protocols.
+            </p>
+          </div>
+          <div class="choose-box">
+            <p>
+              No Guesswork: We show you the shape and color preview before we
+              begin—so you're always in control.
+            </p>
+          </div>
+          <div class="choose-box">
+            <p>
+              Comfort with Care: Gentle numbing, soothing techniques, and a team
+              that listens.
+            </p>
+          </div>
+        </div>
+
+        <div class="cta-container">
+          <a href="#contact" class="cta-button"> Wake Up Ready. Every Day. </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- why  -->
+    <!-- review -->
+    <div class="section-title">
+      <h2 class="center-title">
+        In Their Own Words <span> Stories That Matter</span>
+      </h2>
+      <div class="base-line">
+        <div class="ball ball1"></div>
+        <div class="ball ball2"></div>
+      </div>
+    </div>
+    <div class="google-review-con">
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">K</div>
+          <div class="review-info">
+            <h4>Keerthi</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I have consulted Dr. Hindia for the Hydra Facial treatment, and I’m in
+          love with the results! My skin feels fresh, clean, and deeply
+          nourished. She made sure I was comfortable during the entire
+          procedure. Best facial experience I’ve had—my skin has never looked
+          better!.
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">Y</div>
+          <div class="review-info">
+            <h4>Yazhini</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I was having severe hair fall for few months as I moved from my city
+          to Chennai… I visited Adhia clinic through Google. Doctor explained
+          everything about the reasons and treatment. I’ve completed 3 sessions
+          of hair GFC and can see a gradual reduction in hair fall.
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">L</div>
+          <div class="review-info">
+            <h4>Lucky</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I went for a facial at Adhia Aesthetic Clinic and also got a free
+          dental check-up, following which I took RCT and crown placement. I
+          completely trust the doctor for guiding me throughout. Thank you,
+          doctor!
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="profile-pic">P</div>
+          <div class="review-info">
+            <h4>Priya</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>
+          I took a consultation at Adhia Aesthetic Clinic for hair fall and
+          started PRP treatment. I see visible reduction in hair fall and was
+          also advised some hair supplements.
+        </p>
+      </div>
+    </div>
+
+    <!-- review -->
+    <!-- faq -->
+    <div class="container">
+      <section class="faq-section">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question">Will it really work for me?</button>
+          <div class="faq-answer">
+            <p>
+              We've treated thousands of people with your exact concerns. During
+              consultation, we'll show you before-and-after photos of clients
+              with similar issues and explain exactly what to expect. No false
+              hope, no unrealistic promises.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What if I'm not happy with the results?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Your satisfaction is our reputation. We track your progress
+              closely and adjust treatments as needed. If you're not thrilled
+              with results, we'll work with you until you are – or discuss
+              alternative solutions.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">How long before I see changes?</button>
+          <div class="faq-answer">
+            <p>
+              Some treatments show immediate improvement, others require
+              patience. We'll give you realistic timelines during consultation
+              and keep you informed throughout your journey. No surprises, no
+              disappointments.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I trust you with my face?</button>
+          <div class="faq-answer">
+            <p>
+              Your face is precious to us too. Every procedure is performed by
+              qualified professionals using proven techniques. We maintain the
+              highest safety standards because your wellbeing is our
+              responsibility.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What makes you different from other clinics?
+          </button>
+          <div class="faq-answer">
+            <p>
+              We measure success by your happiness, not our profit. We're still
+              here for you months after treatment ends. We listen to your
+              concerns, not just your symptoms. We treat you like family, not
+              just a client.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- faq -->
+    <!-- google map -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.166936331043!2d80.18106841065635!3d13.04060188722806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52672dd1338d27%3A0xe6ddec217e8429fb!2sAdhia%20Aesthetic%20Clinic%20%7C%20Skin%20%26%20Hair%20Cosmetic%20Clinic%20in%20Chennai%20%7C%20Dental%20clinic%20in%20Chennai!5e1!3m2!1sen!2sin!4v1752482376212!5m2!1sen!2sin"
+      width="100%"
+      height="400"
+      style="border: 0; margin: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <!-- google map -->
+    <!-- footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <img src="./imgs/Logo.png" alt="" class="footer-logo" />
+          <p>
+            184, MGY Babu St., Janaki Na Nagar, <br />
+            Alwartirunagar, Valasaravakkam, <br />
+            Chennai - 600087
+          </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Treatments</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="#"><i class="fas fa-phone"></i> +91 86 8000 1515</a>
+          <a href="#"
+            ><i class="fas fa-envelope"></i> infoadhiaclinic@gmail.com</a
+          >
+          <a href="#">
+            <i class="fas fa-clock"></i> 10AM - 1PM, 5PM - 9PM (Mon-Sat)<br />10AM
+            - 1PM (Sun)
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Adhia Aesthetic Clinic | Designed by
+          <a href="#">D-Grow Marketing Agency</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="./main.js"></script>
+    <script>
+      const semiDetails = {
+        eyebrows: `
+    <h2>Eyebrows – Combination & Ombre Brows</h2>
+    <p>Well-defined eyebrows frame your face and enhance your expressions. Our Combination and Ombre Brows treatments blend expert shaping with semi-permanent pigment application to give you perfectly sculpted brows, day in and day out.</p>
+    <p><strong>Combination Brows:</strong> Fine hair-like strokes at the front with soft shading toward the tail—ideal for those who want a natural yet fuller look.</p>
+    <p><strong>Ombre Brows:</strong> A soft powder effect that mimics brow pencil, perfect for a makeup-ready appearance.</p>
+    <h4>What These Brow Treatments Help With:</h4>
+    <ul>
+      <li>Sparse or patchy eyebrows</li>
+      <li>Uneven brow shape or asymmetry</li>
+      <li>Time-saving for daily makeup routines</li>
+      <li>Hair loss due to conditions like alopecia</li>
+    </ul>
+    <h4>Why Clients Love Our Brows:</h4>
+    <ul>
+      <li>Customized brow mapping to suit your face shape</li>
+      <li>Long-lasting results (12–18 months)</li>
+      <li>Painless procedure with numbing</li>
+      <li>Minimal downtime</li>
+    </ul>
+    <p>Each treatment is performed by trained professionals using sterile tools and high-quality pigments.</p>
+    <button class="semimake-btn">Wake Up with Perfect Brows Every Day</button>
+  `,
+        lips: `
+    <h2>Lips – Lip Tinting / Blushing</h2>
+    <p>Dreaming of naturally rosy, well-defined lips? Our Lip Blush treatment is a semi-permanent solution that enhances the natural color, shape, and symmetry of your lips. Whether your lips are pale, uneven, or losing definition with age, this treatment restores a youthful flush without the need for lipstick.</p>
+    <p>We use ultra-fine needles and safe pigments to gently deposit color into the lips, resulting in a soft, tinted look that lasts for months.</p>
+    <h4>Benefits of Lip Blushing:</h4>
+    <ul>
+      <li>Enhances natural lip color</li>
+      <li>Corrects asymmetry and defines lip borders</li>
+      <li>Creates the illusion of fuller lips</li>
+      <li>Reduces the need for daily lipstick</li>
+    </ul>
+    <h4>What to Expect:</h4>
+    <ul>
+      <li>Numbing cream ensures a comfortable procedure</li>
+      <li>Slight swelling or redness for 1–2 days</li>
+      <li>Color fades slightly as it heals to a soft, natural tint</li>
+      <li>Results last 12–24 months with touch-ups</li>
+    </ul>
+    <p>Our lip techniques are tailored to suit your skin tone, facial features, and beauty goals.</p>
+    <button class="semimake-btn">Fall in Love with Your Lips Again</button>
+  `,
+      };
+
+      const semiModal = document.getElementById("semimakeModal");
+      const semiModalBody = document.getElementById("semimakeModalBody");
+      const semiCloseBtn = semiModal.querySelector(".semimake-close");
+
+      document.querySelectorAll(".semimake-card").forEach((card) => {
+        card.addEventListener("click", () => {
+          const targetId = card.getAttribute("data-target");
+          semiModalBody.innerHTML =
+            semiDetails[targetId] || "<p>Content not found</p>";
+          semiModal.style.display = "flex";
+        });
+      });
+
+      semiCloseBtn.addEventListener("click", () => {
+        semiModal.style.display = "none";
+      });
+
+      window.addEventListener("click", (e) => {
+        if (e.target === semiModal) semiModal.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
